@@ -12,7 +12,7 @@ li {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -20,11 +20,11 @@ a{
 
 html,
 body {
-  font-family: 'Montserrat';
-  background: #1C1D21;
+  font-family: "Montserrat";
+  background: #1c1d21;
 }
 
-body{
+body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -39,40 +39,40 @@ section {
   margin-top: 140px;
 }
 
-.site-content{
+.site-content {
   flex: 1;
 }
 
 .section-wrapper {
   width: 1080px;
   margin: 0 auto;
-  box-shadow: -1px 2px 12px 2px rgb(0 0 0 / 25%)
+  box-shadow: -1px 2px 12px 2px rgb(0 0 0 / 25%);
 }
 
 .text-color-accent {
-  color: #29C0D0 !important;
+  color: #29c0d0 !important;
 }
 
 .line {
   margin: 20px 0;
   width: 120px;
-  border-bottom: 1px solid #66FCF1;
+  border-bottom: 1px solid #66fcf1;
 }
 
 /* variables */
 
 :root {
-/* BACKGROUND */
---body-color: #1C1D21;
---body-color-dark: #101011;
+  /* BACKGROUND */
+  --body-color: #1c1d21;
+  --body-color-dark: #101011;
 
-/* TEXT */
---main-color: #29C0D0;
+  /* TEXT */
+  --main-color: #29c0d0;
 
-/* SHADOW */
+  /* SHADOW */
 
---main-shadow: 6px 8px 16px rgba(0, 0, 0, 0.25);
---color-accent-shadow: 0px 1px 8px #29C0D0;
+  --main-shadow: 6px 8px 16px rgba(0, 0, 0, 0.25);
+  --color-accent-shadow: 0px 1px 8px #29c0d0;
 }
 
 /* about */
@@ -146,6 +146,8 @@ section {
   margin: 0 auto;
   position: relative;
   box-shadow: -1px 2px 12px 2px #000;
+  background-image: url("img/contact-us.png");
+  height: 460px;
 }
 .contact-wrapper-text {
   position: absolute;
@@ -195,7 +197,7 @@ section {
 
 /* footer */
 
-footer{
+footer {
   box-shadow: -1px 2px 12px 2px #000;
   margin-top: 100px;
 }
@@ -279,16 +281,21 @@ footer{
   width: 100%;
 }
 .header-wrapper {
-  padding: 40px;
+  padding: 40px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 1080px;
+  margin: 0 auto;
 }
 .header-navigation ul {
   display: flex;
 }
 .header-navigation ul li {
   margin: 0 20px;
+}
+.header-navigation ul li:last-child {
+  margin: 0;
 }
 .header-navigation ul li a {
   color: #fff;
@@ -554,8 +561,8 @@ footer{
   background: #171717;
   box-shadow: -1px 2px 12px 2px #000;
   width: 900px;
-  margin: 20px auto;
-  padding: 30px;
+  margin: 40px auto 20px;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -563,14 +570,14 @@ footer{
 .why-section-wrapper {
   padding: 60px 0;
 }
+.why-line {
+  margin: 20px auto;
+}
 .why-title {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: #fff;
   font-weight: 700;
   font-size: 50px;
+  text-align: center;
 }
 .why-text {
   color: #fff;
@@ -578,7 +585,7 @@ footer{
   text-align: center;
 }
 .why-wrapper {
-  margin-top: 60px;
+  margin: 60px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -643,12 +650,218 @@ footer{
 
 /* service-page */
 
-.service-wrapper{
-display: flex;
-flex-direction: column;
-align-items: center;
+.service-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.service-text-wrapper{
+.service-text-wrapper {
   margin-top: 100px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+
+  .section-wrapper,
+  .header-wrapper,
+  .info-wrapper,
+  .services-wrapper,
+  .contact-wrapper,
+  .clients-wrapper,
+  .footer-wrapper {
+    width: 960px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 750px;
+  }
+
+  .section-wrapper,
+  .header-wrapper,
+  .info-wrapper,
+  .services-wrapper,
+  .contact-wrapper,
+  .clients-wrapper,
+  .footer-wrapper {
+    width: 700px;
+  }
+
+  .hero-title {
+    font-size: 40px;
+  }
+
+  .hero-img img {
+    max-width: 260px;
+  }
+
+  .hero-section-wrapper {
+    background: linear-gradient(to right, #1c1d21 550px, #66fcf1 130%);
+  }
+
+  .info-img img {
+    max-width: 300px;
+  }
+
+  .info-squere {
+    height: 160px;
+    width: 160px;
+    top: 47%;
+    left: 35%;
+  }
+
+  .info-squere-text {
+    font-size: 46px;
+    left: 26%;
+  }
+
+  .info-text-title {
+    font-size: 22px;
+  }
+
+  .services-cards {
+    max-width: 460px;
+  }
+
+  .services-wrapper {
+    flex-direction: column;
+  }
+
+  .services-wrapper-text,
+  .services-text {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .services-cards {
+    max-width: 530px;
+    margin: 60px auto 0;
+  }
+
+  .why-title,
+  .portfolio-title,
+  .contact-title,
+  .clients-title {
+    font-size: 40px;
+  }
+
+  .why,
+  .swiper-wrapper {
+    width: 650px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 440px;
+  }
+
+  .section-wrapper,
+  .header-wrapper,
+  .info-wrapper,
+  .services-wrapper,
+  .contact-wrapper,
+  .clients-wrapper,
+  .footer-wrapper,
+  .clients-icons {
+    width: 400px;
+  }
+
+  .why-title,
+  .portfolio-title,
+  .contact-title,
+  .clients-title {
+    font-size: 32px;
+  }
+
+  .header-logo a img {
+    max-width: 170px;
+  }
+
+  .header-navigation ul li {
+    margin: 0 12px;
+  }
+
+  .hero-section-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .hero-title {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+
+  .info-wrapper {
+    flex-direction: column;
+  }
+
+  .services-cards {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .services-card {
+    margin: 20px 0 0 !important;
+  }
+
+  .why,
+  .swiper-wrapper {
+    max-width: 350px;
+  }
+
+  .why-wrapper {
+    flex-direction: column;
+  }
+  .why-item {
+    margin: 20px auto 0 !important;
+  }
+  .why-item:nth-child(1) {
+    margin: 0 auto !important;
+  }
+  .clients-icons {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .clients-icons img {
+    margin: 20px auto 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 320px;
+  }
+
+  .section-wrapper,
+  .header-wrapper,
+  .info-wrapper,
+  .services-wrapper,
+  .contact-wrapper,
+  .clients-wrapper,
+  .footer-wrapper,
+  .clients-icons {
+    width: 300px;
+  }
+  .hero-img img {
+    max-width: 220px;
+  }
+  .services-card {
+    width: 300px;
+  }
+  .why,
+  .swiper-wrapper {
+    width: 260px;
+    padding: 20px;
+  }
+  .why-title,
+  .portfolio-title,
+  .contact-title,
+  .clients-title {
+    font-size: 26px;
+  }
 }
